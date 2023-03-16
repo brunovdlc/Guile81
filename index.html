@@ -140,7 +140,7 @@ const ScrollableComponent = (props) => {
             setStateTo(Object.assign(Object.assign({}, state), { grabbing: false }));
         }
     };
-    return (React.createElement("div", { ref: ref, className: classNames("", props.className), id: props.id, onMouseDown: handleOnMouseDown, onMouseMove: handleOnMouseMove, onMouseUp: handleOnMouseUp, onMouseLeave: handleOnMouseUp }, props.children));
+    return (React.createElement("div", { ref: ref, className: classNames("scrollable-component", props.className), id: props.id, onMouseDown: handleOnMouseDown, onMouseMove: handleOnMouseMove, onMouseUp: handleOnMouseUp, onMouseLeave: handleOnMouseUp }, props.children));
 };
 const WeatherSnap = () => {
     const [temperature] = React.useState();
